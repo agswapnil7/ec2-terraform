@@ -1,9 +1,5 @@
 # EC2 Creation on AWS Using Terraform 
 
-This PoC automates EC2 instance provisioning on AWS using Terraform for Infrastructure-as-Code (IaC).
-
----
-
 ## Goal
 
 Automate provisioning an EC2 instance on AWS with Terraform for reproducibility and scalability.
@@ -118,4 +114,4 @@ terraform destroy # Type 'yes' to confirm
 ```
 
 ## Conclusion
-This PoC demonstrates Terraform's ability to automatically provision AWS infrastructure, manage state, and provide a reusable setup.
+This demonstrates Terraform's ability to automatically provision AWS infrastructure, manage state, and provide a reusable setup.

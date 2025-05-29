@@ -1,4 +1,4 @@
-# EC2 Creation on AWS Using Terraform - Proof of Concept
+# EC2 Creation on AWS Using Terraform 
 
 This PoC automates EC2 instance provisioning on AWS using Terraform for Infrastructure-as-Code (IaC).
 
@@ -49,9 +49,9 @@ ec2-terraform/
 
 ### 2. Terraform Configurations
 
-**`main.tf`**
-
 ```terraform
+main.tf
+
 provider "aws" {
   region = var.aws_region
 }
@@ -115,6 +115,7 @@ To avoid costs, destroy resources:
 Bash
 
 terraform destroy # Type 'yes' to confirm
+```
 
-Conclusion
+## Conclusion
 This PoC demonstrates Terraform's ability to automatically provision AWS infrastructure, manage state, and provide a reusable setup.

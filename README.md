@@ -65,6 +65,7 @@ resource "aws_instance" "web" {
     Name = "Terraform-EC2"
   }
 }
+
 variables.tf
 
 Terraform
@@ -89,6 +90,7 @@ Terraform
 
 output "instance_id" { value = aws_instance.web.id }
 output "public_ip" { value = aws_instance.web.public_ip }
+
 3. Deploy
 Navigate to ec2-terraform/ and run:
 
@@ -98,6 +100,7 @@ terraform init
 terraform validate
 terraform plan
 terraform apply # Type 'yes' to confirm
+
 4. Connect
 After terraform apply, SSH into your instance using the outputted public IP:
 
@@ -112,5 +115,6 @@ To avoid costs, destroy resources:
 Bash
 
 terraform destroy # Type 'yes' to confirm
+
 Conclusion
 This PoC demonstrates Terraform's ability to automatically provision AWS infrastructure, manage state, and provide a reusable setup.
